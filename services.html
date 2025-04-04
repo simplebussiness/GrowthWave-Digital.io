@@ -9,56 +9,42 @@
   <link rel="stylesheet" href="css/style.css" />
   <style>
     body {
-      background: url('img2/myriam-jessier-eveI7MOcSmw-unsplash.jpg') no-repeat center center fixed;
-      background-size: cover;
+      background-color: #f4f4f4;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: #e4e4e4;
+      color: #333;
     }
 
     .navbar {
-      backdrop-filter: blur(15px);
-      background-color: rgba(255, 255, 255, 0.05);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+      background-color: #ffffff;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
 
     .navbar-brand {
       font-weight: bold;
-      color: white;
-      font-size: 1.8rem;
-    }
-
-    .nav-link {
-      color: white !important;
-      font-weight: 500;
-      margin-left: 1rem;
-    }
-
-    .section-glass {
-      background: rgba(255, 255, 255, 0.08);
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      backdrop-filter: blur(14px);
-      border-radius: 20px;
-      padding: 3rem 2rem;
-      margin-top: 4rem;
-      box-shadow: 0 8px 32px rgba(0,0,0,0.2);
-    }
-
-    .tm-text-primary {
       color: #4ea8de;
     }
 
-    .tm-service-box {
-      background: rgba(255, 255, 255, 0.05);
-      border-radius: 15px;
-      padding: 20px;
-      backdrop-filter: blur(8px);
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      transition: all 0.3s ease;
+    .navbar-nav .nav-link {
+      color: #333 !important;
     }
 
-    .tm-service-box:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 0 15px rgba(78,168,222,0.5);
+    .navbar-nav .nav-link.active {
+      color: #4ea8de !important;
+    }
+
+    .section-glass {
+      background: #ffffff;
+      padding: 3rem 2rem;
+      margin-top: 4rem;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      border-radius: 12px;
+    }
+
+    .tm-service-box {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     }
 
     .tm-service-img {
@@ -66,46 +52,39 @@
       margin-bottom: 15px;
     }
 
-    .learn-more-btn {
+    .btn-primary {
       background-color: #4ea8de;
-      border: none;
-      padding: 10px 25px;
-      border-radius: 30px;
-      color: white;
-      font-weight: 500;
-      margin-top: 10px;
+      border-color: #4ea8de;
     }
 
-    .learn-more-btn:hover {
+    .btn-primary:hover {
       background-color: #3498db;
-      transform: scale(1.05);
+      border-color: #3498db;
     }
 
-    .cta {
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 2rem;
       text-align: center;
-      margin: 3rem 0;
     }
 
-    .footer {
-      background-color: rgba(0, 0, 0, 0.6);
-      color: #ccc;
-      text-align: center;
-      padding: 2rem 0;
-      margin-top: 4rem;
+    footer p {
+      margin-bottom: 0;
     }
   </style>
 </head>
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark py-3">
+  <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
       <a class="navbar-brand" href="index.html">GrowthWave Digital</a>
       <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div id="navMenu" class="collapse navbar-collapse justify-content-end">
-        <ul class="navbar-nav">
+      <div id="navMenu" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
           <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
           <li class="nav-item"><a href="services.html" class="nav-link active">Services</a></li>
@@ -117,14 +96,14 @@
 
   <!-- Services Section -->
   <section class="container section-glass">
-    <h2 class="text-center mb-5 tm-text-primary">Our Digital Marketing Services</h2>
+    <h2 class="text-center mb-5">Our Digital Marketing Services</h2>
     <div class="row">
       <div class="col-md-4 mb-4">
         <div class="tm-service-box">
           <img src="img2/stephen-phillips-hostreviews-co-uk-shr_Xn8S8QU-unsplash.jpg" alt="SEO" class="img-fluid tm-service-img">
           <h4 class="tm-text-primary">SEO Optimization</h4>
           <p>Boost your site’s visibility with advanced SEO strategies, keyword targeting, and technical optimization.</p>
-          <a href="#" class="learn-more-btn">Learn More</a>
+          <a href="#" class="btn btn-primary">Learn More</a>
         </div>
       </div>
       <div class="col-md-4 mb-4">
@@ -132,7 +111,7 @@
           <img src="img2/merakist-CNbRsQj8mHQ-unsplash.jpg" alt="Social Media" class="img-fluid tm-service-img">
           <h4 class="tm-text-primary">Social Media Marketing</h4>
           <p>Engage and grow your audience through strategic Facebook, Instagram, and LinkedIn campaigns.</p>
-          <a href="#" class="learn-more-btn">Learn More</a>
+          <a href="#" class="btn btn-primary">Learn More</a>
         </div>
       </div>
       <div class="col-md-4 mb-4">
@@ -140,23 +119,18 @@
           <img src="img2/campaign-creators-pypeCEaJeZY-unsplash.jpg" alt="PPC" class="img-fluid tm-service-img">
           <h4 class="tm-text-primary">PPC Advertising</h4>
           <p>Drive instant traffic and results with high-performing Google Ads, Facebook Ads, and retargeting funnels.</p>
-          <a href="#" class="learn-more-btn">Learn More</a>
+          <a href="#" class="btn btn-primary">Learn More</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Call-to-Action -->
-  <div class="cta">
-    <a href="contact.html" class="btn btn-primary btn-lg px-4">Get a Free Marketing Consultation</a>
-  </div>
-
   <!-- Footer -->
-  <footer class="footer">
+  <footer>
     <p>&copy; 2025 GrowthWave Digital. All rights reserved.</p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/script.js"></script>
 </body>
 </html>
+
