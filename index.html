@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,17 +8,26 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
-
 <body>
 
-  <!-- Header -->
+  <!-- Navigation Menu -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header with Glass Effect -->
   <header class="glass">
     <h1>GrowthWave Digital</h1>
     <p>Your Partner in Powerful Digital Marketing</p>
   </header>
 
-  <!-- Hero Section -->
-  <section class="container-fluid">
+  <!-- Hero Section with Transparent Glass Effect -->
+  <section class="hero-section glass">
     <div>
       <h2>Transform Your Digital Experience</h2>
       <p>We create innovative digital marketing strategies to help your brand grow and thrive online. Let’s craft the perfect campaign for your success!</p>
@@ -28,7 +36,7 @@
   </section>
 
   <!-- Services Section -->
-  <section style="padding: 60px 20px; max-width: 1200px; margin: auto;">
+  <section class="services-section">
     <div class="tm-service-box glass">
       <img src="img/lukas-muller-Q4iYWsWbR90-unsplash.jpg" alt="Digital Strategy" class="tm-service-img" />
       <h3 class="tm-text-primary">Strategic Campaigns</h3>
@@ -42,17 +50,24 @@
       <p class="tm-service-text">Rank higher and reach more customers. We optimize every detail to ensure you stand out on search engines.</p>
       <a href="services.html" class="btn-primary">Explore Services</a>
     </div>
+
+    <div class="tm-service-box glass" style="margin-top: 40px;">
+      <img src="img/timothy-hales-bennett-OwvRB-M3GwE-unsplash.jpg" alt="Creative Content" class="tm-service-img" />
+      <h3 class="tm-text-primary">Creative Brilliance</h3>
+      <p class="tm-service-text">We blend creativity with precision to design compelling campaigns that leave a lasting impression.</p>
+      <a href="services.html" class="btn-primary">See Portfolio</a>
+    </div>
   </section>
 
   <!-- Footer -->
-  <footer>
+  <footer class="glass">
     <p>&copy; 2025 GrowthWave Digital. All rights reserved.</p>
-    <p>Follow us on 
-      <a href="#">Instagram</a>, 
-      <a href="#">LinkedIn</a>
+    <p>
+      <a href="about.html" style="color: #00d9ff; text-decoration: none;">About Us</a> |
+      <a href="services.html" style="color: #00d9ff; text-decoration: none;">Services</a> |
+      <a href="contact.html" style="color: #00d9ff; text-decoration: none;">Contact</a>
     </p>
   </footer>
 
 </body>
-
 </html>
