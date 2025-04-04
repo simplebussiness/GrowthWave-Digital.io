@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GrowthWave Digital - Digital Marketing Experts</title>
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 
@@ -19,12 +20,12 @@
 </head>
 
 <body>
-    <!-- Header Section -->
-    <header class="container-fluid bg-primary text-white text-center py-5" style="background: url('img/hero-bg.jpg') no-repeat center center; background-size: cover;">
+    <!-- Header Section with Gradient -->
+    <header class="container-fluid text-white text-center py-5" style="background: linear-gradient(to right, #007bff, #00c6ff);">
         <div class="row">
             <div class="col-12">
-                <h1>Grow Your Business with GrowthWave Digital</h1>
-                <p>We help businesses succeed with SEO, Social Media, and PPC strategies.</p>
+                <h1 class="display-4 font-weight-bold">Grow Your Business with GrowthWave Digital</h1>
+                <p class="lead">We help businesses succeed with SEO, Social Media, and PPC strategies.</p>
             </div>
         </div>
     </header>
@@ -55,55 +56,65 @@
         </div>
     </nav>
 
-    <!-- About Us Section -->
+    <!-- About Us Section with Background and Styling -->
     <section class="container my-5">
-        <div class="row">
+        <div class="row align-items-center">
             <div class="col-md-6">
-                <h2 class="tm-text-primary">About Us</h2>
-                <p>At GrowthWave Digital, we specialize in delivering tailored digital marketing solutions. With a team of experts in SEO, PPC, and social media marketing, we are here to help businesses scale and thrive in today's competitive digital landscape. Our goal is to drive targeted traffic to your site, increase engagement, and enhance your ROI.</p>
+                <h2 class="tm-text-primary font-weight-bold">About Us</h2>
+                <p>At GrowthWave Digital, we specialize in delivering tailored digital marketing solutions. With a team of experts in SEO, PPC, and social media marketing, we help businesses scale and thrive in today’s competitive digital landscape. Our goal is to drive targeted traffic, increase engagement, and enhance ROI.</p>
             </div>
             <div class="col-md-6">
-                <img src="img/hero-bg.jpg" alt="About GrowthWave Digital" class="img-fluid">
+                <img src="img/timothy-hales-bennett-OwvRB-M3GwE-unsplash.jpg" alt="About GrowthWave Digital" class="img-fluid rounded shadow">
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
+    <!-- Services Section with Cards and Hover Effects -->
     <section class="container my-5">
+        <h2 class="text-center tm-text-primary font-weight-bold">Our Services</h2>
         <div class="row">
-            <div class="col-md-4">
-                <div class="tm-service-box mb-5">
-                    <img src="img/timothy-hales-bennett-OwvRB-M3GwE-unsplash.jpg" alt="SEO Optimization" class="img-fluid tm-service-img">
-                    <div>
-                        <h4 class="tm-text-primary">SEO Optimization</h4>
-                        <p>Boost your website ranking and get more organic traffic with our expert SEO strategies.</p>
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-lg border-light">
+                    <img src="img/timothy-hales-bennett-OwvRB-M3GwE-unsplash.jpg" class="card-img-top" alt="SEO Optimization">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">SEO Optimization</h5>
+                        <p class="card-text">Boost your website ranking and get more organic traffic with our expert SEO strategies.</p>
+                    </div>
+                    <div class="card-footer text-right">
+                        <a href="#" class="btn btn-primary">Learn More</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="tm-service-box mb-5">
-                    <img src="img/sumup-KqiykWgHBtQ-unsplash.jpg" alt="Social Media Marketing" class="img-fluid tm-service-img">
-                    <div>
-                        <h4 class="tm-text-primary">Social Media Marketing</h4>
-                        <p>Increase brand awareness and engage with customers on Facebook, Instagram, and LinkedIn.</p>
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-lg border-light">
+                    <img src="img/sumup-KqiykWgHBtQ-unsplash.jpg" class="card-img-top" alt="Social Media Marketing">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Social Media Marketing</h5>
+                        <p class="card-text">Increase brand awareness and engage with customers on Facebook, Instagram, and LinkedIn.</p>
+                    </div>
+                    <div class="card-footer text-right">
+                        <a href="#" class="btn btn-primary">Learn More</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="tm-service-box mb-5">
-                    <img src="img/lukas-muller-Q4iYWsWbR90-unsplash.jpg" alt="PPC Advertising" class="img-fluid tm-service-img">
-                    <div>
-                        <h4 class="tm-text-primary">PPC Advertising</h4>
-                        <p>Maximize your ROI with high-converting Google and Facebook Ads.</p>
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-lg border-light">
+                    <img src="img/lukas-muller-Q4iYWsWbR90-unsplash.jpg" class="card-img-top" alt="PPC Advertising">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">PPC Advertising</h5>
+                        <p class="card-text">Maximize your ROI with high-converting Google and Facebook Ads.</p>
+                    </div>
+                    <div class="card-footer text-right">
+                        <a href="#" class="btn btn-primary">Learn More</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials Section -->
+    <!-- Testimonials Section with Background Color and Padding -->
     <section class="container my-5">
-        <h2 class="text-center tm-text-primary">What Our Clients Say</h2>
+        <h2 class="text-center tm-text-primary font-weight-bold">What Our Clients Say</h2>
         <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -126,40 +137,12 @@
         </div>
     </section>
 
-    <!-- Case Studies Section -->
-    <section class="container my-5">
-        <h2 class="text-center tm-text-primary">Our Successful Projects</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="case-study-box">
-                    <img src="img/success-case1.jpg" alt="Case Study 1" class="img-fluid">
-                    <h4>Increased Traffic by 400%</h4>
-                    <p>Through targeted SEO strategies, we helped our client increase organic traffic and revenue.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="case-study-box">
-                    <img src="img/success-case2.jpg" alt="Case Study 2" class="img-fluid">
-                    <h4>Boosted Conversions with PPC</h4>
-                    <p>Our PPC campaign increased conversions by 200% in just 3 months.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="case-study-box">
-                    <img src="img/success-case3.jpg" alt="Case Study 3" class="img-fluid">
-                    <h4>Social Media Success</h4>
-                    <p>We grew our client’s social media followers by 500%, boosting engagement and brand awareness.</p>
-                </div>
-            </div>
-        </div>
+    <!-- Call-to-Action Section with Gradient -->
+    <section class="container text-center my-5">
+        <a href="contact.html" class="btn btn-lg" style="background: linear-gradient(to right, #ff7e5f, #feb47b); color: white;">Get a Free Marketing Consultation</a>
     </section>
 
-    <!-- Call-to-Action Section -->
-    <div class="text-center my-5">
-        <a href="contact.html" class="btn btn-primary btn-lg">Get a Free Marketing Consultation</a>
-    </div>
-
-    <!-- Footer Section -->
+    <!-- Footer Section with Background Color -->
     <footer class="bg-dark text-white py-4">
         <div class="container text-center">
             <p>&copy; 2025 GrowthWave Digital. All Rights Reserved.</p>
@@ -199,5 +182,6 @@
 </body>
 
 </html>
+
 
 
