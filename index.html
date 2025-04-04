@@ -19,13 +19,6 @@
 </head>
 
 <body>
-    <!-- Preloader Section -->
-    <div id="preloader">
-        <div class="spinner-border" role="status">
-            <span class="sr-only">Loading...</span>
-        </div>
-    </div>
-
     <!-- Header Section -->
     <header class="container-fluid bg-primary text-white text-center py-5" style="background: url('img/hero-bg.jpg') no-repeat center center; background-size: cover;">
         <div class="row">
@@ -193,14 +186,8 @@
     <!-- Custom JavaScript -->
     <script src="js/script.js"></script>
 
-    <!-- jQuery for Preloader and Back to Top Button -->
+    <!-- jQuery for Back to Top Button -->
     <script>
-        $(window).on('load', function () {
-            setTimeout(function () {
-                $('#preloader').fadeOut('slow');
-            }, 100);
-        });
-
         $(window).scroll(function () {
             if ($(this).scrollTop() > 100) {
                 $('#backToTop').fadeIn();
